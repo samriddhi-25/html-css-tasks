@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Task7</title>
+    <style>
+        body {
+            background-color: #a02a54;
+        }
+
+        form {
+            padding: 25px;
+            background-color: #75213f;
+            margin: auto;
+            text-align: left;
+            color: white;
+            max-width: 400px;
+        }
+
+        .lab {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .lab label {
+            flex: 1;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select,
+        textarea {
+            flex: 2;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #75213f;
+            font-weight: bolder;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <form>
+            <div class="lab">
+                <label for="name"><b>Name:</b></label>
+                <input type="text" placeholder="Your Name">
+            </div>
+
+            <div class="lab">
+                <label for="email"><b>Email:</b></label>
+                <input type="email" placeholder="Your Email">
+            </div>
+
+            <div class="lab">
+                <label for="password"><b>Password:</b></label>
+                <input type="password">
+            </div>
+
+            <div class="lab">
+                <label for="pnum"><b>Phone number:</b></label>
+                <input type="tel">
+            </div>
+
+            <div class="lab">
+                <label for="gender"><b>Gender:</b></label>
+                <label for="men">Male</label>
+                <input type="radio" id="men">
+                <label for="women">Female</label>
+                <input type="radio" id="women">
+                <label for="others">Others</label>
+                <input type="radio" id="others">
+            </div>
+
+            <div class="lab">
+                <label for="country"><b>Language:</b></label>
+                <select>
+                    <option value="India">English</option>
+                    <option value="Japan">Hindi</option>
+                    <option value="USA">Telugu</option>
+                    <option value="Australia">Tamil</option>
+                    <option value="Australia">Kannada</option>
+                    <option value="Australia">Malayalam</option>
+                </select>
+            </div>
+
+            <div class="lab">
+                <label for="zip"><b>Zip Code:</b></label>
+                <input type="text" maxlength="6">
+            </div>
+
+            <div class="lab">
+                <label for="about"><b>About:</b></label>
+                <textarea>Write about yourself...</textarea>
+            </div>
+
+            <div class="lab">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
